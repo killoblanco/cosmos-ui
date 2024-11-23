@@ -177,14 +177,14 @@ export const ColorsPage: FC = () => {
   return (
     <main className="flex flex-col gap-8 grow">
       <h1 className="text-title-large">Colors</h1>
-      <div className="flex gap-2">
+      <div className="flex gap-1">
         <div className="flex flex-col items-center gap-2">
-          <div className="h-5" />
+          <div className="h-4" />
           <div className="flex flex-col gap-1">
             {[5, 10, 20, 30, 40, 50, 60, 70, 80, 90, 95].map((shade) => (
               <div
                 key={window.crypto.randomUUID()}
-                className={cn("h-16 flex items-center justify-center text-caption-1", shade)}
+                className={cn("h-14 flex items-center justify-center text-caption-1", shade)}
               >
                 {shade * 10}
               </div>
@@ -199,7 +199,7 @@ export const ColorsPage: FC = () => {
                 <div
                   key={shade}
                   className={cn(
-                    "size-16 flex items-center justify-center rounded-xl",
+                    "size-14 flex items-center justify-center rounded-xl",
                     shade,
                   )}
                 />

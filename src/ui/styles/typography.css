@@ -1,0 +1,45 @@
+@layer components {
+  .text-title-large {
+    @apply font-extrabold text-[2.125rem] leading-[2.5625rem] tracking-[0.025rem];
+  }
+
+  .text-title-1 {
+    @apply font-bold text-[1.75rem] leading-[2.125rem] tracking-[0.0238rem];
+  }
+
+  .text-title-2 {
+    @apply font-semibold text-[1.375rem] leading-[1.75rem] -tracking-[0.0163rem];
+  }
+
+  .text-title-3 {
+    @apply font-normal text-[1.25rem] leading-[1.5625rem] -tracking-[0.0281rem];
+  }
+
+  .text-headline {
+    @apply font-semibold text-[1.0625rem] leading-[1.375rem] -tracking-[0.0269rem];
+  }
+
+  .text-body {
+    @apply font-normal text-[1.0625rem] leading-[1.375rem] -tracking-[0.0269rem];
+  }
+
+  .text-callout {
+    @apply font-normal text-base leading-[1.3125rem] -tracking-[0.0194rem];
+  }
+
+  .text-subheadline {
+    @apply font-normal text-[0.9375rem] leading-[1.25rem] -tracking-[0.0144rem];
+  }
+
+  .text-footnote {
+    @apply font-normal text-[0.8125rem] leading-[1.125rem] -tracking-[0.005rem];
+  }
+
+  .text-caption-1 {
+    @apply font-normal text-[0.75rem] leading-[1rem] tracking-normal;
+  }
+
+  .text-caption-2 {
+    @apply font-normal text-[0.6875rem] leading-[0.8125rem] tracking-[0.0037rem];
+  }
+}

@@ -1,0 +1,9 @@
+@layer base {
+  * {
+    @apply border-border transition-colors transition-opacity transition-shadow;
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-background text-foreground font-sans min-h-dvh;
+  }
+}

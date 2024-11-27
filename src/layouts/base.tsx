@@ -19,6 +19,10 @@ const sidebarOpts = [
       },
     ],
   },
+  {
+    group: "Components",
+    children: [{ label: "Button", path: "/components/button" }],
+  },
 ];
 
 export const BaseLayout: FC = () => {
@@ -28,9 +32,9 @@ export const BaseLayout: FC = () => {
 
   return (
     <div className="container flex gap-8 h-full">
-      <aside className="w-full max-w-72 flex flex-col gap-4">
+      <aside className="w-full max-w-72 flex flex-col gap-6">
         <h4 className="text-title-large">Cosmos UI</h4>
-        <nav>
+        <nav className="flex flex-col gap-4">
           {sidebarOpts.map(({ group, children }) => (
             <div key={group} className="flex flex-col gap-2.5">
               <h5 className="text-title-3">{group}</h5>
@@ -41,7 +45,7 @@ export const BaseLayout: FC = () => {
                       href={path}
                       className="flex items-center gap-4 hover:underline hover:underline-offset-4"
                     >
-                      {icon}
+                      {icon ?? null}
                       <span>{label}</span>
                     </a>
                   </li>
